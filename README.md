@@ -1,0 +1,84 @@
+# GraphQL Content Hub
+
+Hi! This repo is for a graphql server acting as a **content hub**. The goal of this was to try and pull in data from different sources as serve them from one graphql server.
+
+## Sources
+
+The following information is used in the content hub
+
+- Books JSON File stored in the codebase
+- Rick and Morty GraphQL API
+- OMDB Rest API
+- Trevorblades Countries GraphQL API
+
+## Stack
+
+This project is essentially running an **apollo server** with the following dependancies:
+
+- apollo-server
+- graphql
+- graphql-request
+- node-fetch
+- apollo-datasource-rest
+
+### Available Queries
+
+#### Rick and Morty
+
+```
+characters {
+  	name
+	id
+}
+```
+
+#### Books
+
+Search for all books and query by a Book Id.
+
+```
+books {
+  title
+  author
+}
+
+book(title: "The Awakening") {
+  author
+}
+```
+
+#### Movie
+
+Returns a random movie from the OMDB API.
+Search for a movie also by name
+
+```
+#returns random movie
+movie {
+  Title
+  Year
+  Rated
+}
+#returns a random batman movie
+movie(name: "Batman") {
+  Title
+  Year
+  Rated
+}
+```
+
+#### Countries
+
+```
+countries {
+  name
+  code
+  capital
+}
+```
+
+## Useful Links
+
+- Learn with Jason - https://learnwithjason.dev/build-your-own-content-hub-with-graphql
+- Eve Porcello - https://moonhighway.com/fetching-data-from-a-graphql-api
+- Apollo GraphQL - https://apollographql.com/docs
