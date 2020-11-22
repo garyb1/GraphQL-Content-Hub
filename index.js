@@ -11,6 +11,8 @@ require('dotenv').config();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
+  playground: true,
   dataSources: () => ({
     movieAPI: new MoviesAPI(),
   }),
