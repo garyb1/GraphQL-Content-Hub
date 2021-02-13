@@ -5,7 +5,7 @@ The goal of this was to try and pull in data from different sources as serve the
 
 Url: [Netlify](https://gql-content-hub.netlify.app/.netlify/functions/graphql)
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/90cfd0e2-a13e-4e9a-8058-6cf6eda99682/deploy-status)](https://app.netlify.com/sites/gql-content-hub/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90cfd0e2-a13e-4e9a-8058-6cf6eda99682/deploy-status)](https://app.netlify.com/sites/gql-content-hub/deploys)
 
 Blog Available on
 
