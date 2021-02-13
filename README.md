@@ -1,8 +1,17 @@
 # GraphQL Content Hub
 
-Hi! This repo is for a graphql server acting as a **content hub**. The goal of this was to try and pull in data from different sources as serve them from one graphql server.
+Hi! This repo is for an Apollo GraphQL Server acting as a **content hub**. 
+The goal of this was to try and pull in data from different sources as serve them from one graphql server.
 
-Url: [https://apollo-gql-hub.herokuapp.com/](https://apollo-gql-hub.herokuapp.com/)
+Url: [Netlify](https://gql-content-hub.netlify.app/.netlify/functions/graphql)
+
+![Netlify Status](https://api.netlify.com/api/v1/badges/90cfd0e2-a13e-4e9a-8058-6cf6eda99682/deploy-status)](https://app.netlify.com/sites/gql-content-hub/deploys)
+
+Blog Available on
+
+- [Hashnode](https://hashnode.garybyrne.codes/creating-an-apollo-server-graphql-content-hub?guid=e882229e-a092-4402-9284-cc66cb7e525e&deviceId=41b56dee-5e9a-440e-b584-120a725f44bc)
+- [Dev.to](https://dev.to/garybyrne/creating-an-apollo-server-graphql-content-hub-721)
+- [Garybyrne.codes](https://www.garybyrne.codes/posts/create-an-apollo-graphql-server-content-hub/)
 
 ## Sources
 
