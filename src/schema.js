@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import { gql } from 'apollo-server';
+import { gql } from 'apollo-server-lambda';
 
 // # A schema is a collection of type definitions (hence "typeDefs")
 // # that together define the "shape" of queries that are executed against
@@ -39,11 +39,9 @@ export const typeDefs = gql`
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
     books: [Book],
-    book(title: String!): Book!,
-    countries: [Country],
-    country(code: String!): Country
+    book(title: String!): Book,
+    countries(code: String): [Country],
     characters: [Character],
-    character(id: String!): Character,
     movie(name: String): Movie,
   }
 `;
