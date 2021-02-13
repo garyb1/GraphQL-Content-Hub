@@ -1,4 +1,4 @@
-[
+export default [
     {
         "title": "The Awakening",
         "author": "Kate Chopin"

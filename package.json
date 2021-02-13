@@ -3,29 +3,36 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=\"-r esm\" node index.js ",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "start": "NODE_ENV=development npm run start:lambda",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build  src/lambda"
   },
-  "keywords": ["GraphQL", "NodeJS", "Apollo Server"],
+  "keywords": [
+    "GraphQL",
+    "NodeJS",
+    "Apollo Server"
+  ],
   "author": "Gary Byrne",
   "license": "ISC",
   "description": "A GraphQL Content Hub",
   "dependencies": {
     "apollo-datasource-rest": "^0.9.5",
-    "apollo-server": "^2.19.0",
+    "apollo-server-lambda": "^2.21.0",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
     "graphql": "^15.4.0",
     "graphql-request": "^3.3.0",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
+    "netlify-lambda": "^2.0.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "netlify-cli": "^3.7.1",
     "prettier": "^2.2.0"
   }
 }

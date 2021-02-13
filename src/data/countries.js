@@ -5,17 +5,28 @@
 
 import fetch from 'node-fetch';
 
-export const getCountries = async () => {
+export const getCountries = async (code) => {
   const url = 'https://countries.trevorblades.com/';
-  const query = `
-    query {
+  let query;
+  if (code) {
+    query = `
+      query {
+        countries(filter: { code: { eq: "${code}" } }) {
+          name
+          code
+          capital
+        }
+      }
+    `
+  } else { 
+    query = `query {
       countries {
         name
         code
         capital
       }
-    }
-  `;
+    }`; 
+  }
 
   const opts = {
     method: 'POST',

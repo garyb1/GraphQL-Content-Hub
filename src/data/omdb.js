@@ -2,7 +2,9 @@
   This example shows how to query the omdb api using the apollo datasource package
 */
 
-const { RESTDataSource } = require('apollo-datasource-rest');
+import { RESTDataSource } from 'apollo-datasource-rest';
+import dotenv from "dotenv";
+dotenv.config();
 
 export class MoviesAPI extends RESTDataSource {
   constructor() {
