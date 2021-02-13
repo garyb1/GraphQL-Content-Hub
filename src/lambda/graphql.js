@@ -11,6 +11,10 @@ const server = new ApolloServer({
   dataSources: () => ({
     movieAPI: new MoviesAPI(),
   }),
+  introspection: true,
+  playground: true,
 });
+
+
 
 exports.handler = server.createHandler();
