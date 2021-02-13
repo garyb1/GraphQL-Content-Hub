@@ -7,7 +7,7 @@
     "lint:fix": "eslint . --fix",
     "start": "NODE_ENV=development npm run start:lambda",
     "start:lambda": "netlify-lambda serve src/lambda",
-    "build:lambda": "netlify-lambda build  src/lambda"
+    "build:lambda": "netlify-lambda build src/lambda"
   },
   "keywords": [
     "GraphQL",
