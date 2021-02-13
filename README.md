@@ -20,7 +20,7 @@ This project is essentially running an **apollo server** with the following depe
 - apollo-server
 - graphql
 - graphql-request
-- node-fetch
+- isomorphic-fetch
 - apollo-datasource-rest
 
 ### Available Queries

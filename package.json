@@ -24,7 +24,7 @@
     "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
     "graphql-request": "^3.3.0",
-    "node-fetch": "^2.6.1"
+    "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
     "netlify-lambda": "^2.0.3",

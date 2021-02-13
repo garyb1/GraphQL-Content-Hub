@@ -5,28 +5,17 @@
 
 import fetch from 'isomorphic-fetch';
 
-export const getCountries = async (code) => {
+export const getCountries = async () => {
   const url = 'https://countries.trevorblades.com/';
-  let query;
-  if (code) {
-    query = `
-      query {
-        countries(filter: { code: { eq: "${code}" } }) {
-          name
-          code
-          capital
-        }
-      }
-    `
-  } else { 
-    query = `query {
+  const query = `
+    query {
       countries {
         name
         code
         capital
       }
-    }`; 
-  }
+    }
+  `;
 
   const opts = {
     method: 'POST',
